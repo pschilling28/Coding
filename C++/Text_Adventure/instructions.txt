@@ -1,0 +1,41 @@
+Project Requirements
+
+1. Your program should have a storyline with:
+
+   - a beginning
+   - at least three possible endings
+
+It can help to map out your ideas on paper and draw out your possible branches before you begin coding anything.
+
+In our solution, we used Alice’s Adventures in Wonderland as the premise for our storyline, but you can choose any topic you like! Some possible ideas include:
+
+    - A fantasy book you love
+    - Your favorite TV show
+    - A funny movie
+    - A murder mystery
+    - A game show
+
+2. Your program should contain at least three branch points where the user must make a choice about what to do next. At each branch point, the program should:
+
+    - give the user at least two choices
+    - accept user input
+
+Note that not every story branch needs its own ending; it can also add something and then reconnect with another storyline.
+
+3. Your program should incorporate at least one kind of loop.
+
+Loops come in handy in a couple scenarios:
+
+    - to validate user input (e.g., check if the user entered something other than your listed choices and then list the choices again)
+    - to give the user multiple chances to choose a specific outcome (e.g., give a user three chances to pick an option that won’t get them killed)
+    - to continue the adventure until the user makes a particular choice
+
+4. Your program should handle user choices using conditional logic. We encourage you to use if/else if statements and switch statements where you see fit.
+
+Note: If your user has reached an ending, you can use return 0; to exit the main() function and end the program.
+
+5. Great work! Visit our forums to compare your project to our sample solution code. You can also learn how to host your own solution on GitHub so you can share it with other learners! Your text adventure will probably be coded a lot different from ours — and that’s totally fine! The important thing is you built something that works as expected and that you are proud of. There are multiple ways to solve these projects, and you’ll learn more by seeing others’ code.
+
+If you want to extend this project further, try adding more complexity by increasing the number of possible branches. Also, if you already know C++ functions, you can refactor your program so that your code is cleaner and more modular.
+
+Optional: You can include ASCII art to add an extra illustrative flourish to the storyline.

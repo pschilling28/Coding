@@ -1,0 +1,24 @@
+Notes
+- Create character feature?
+- GoT theme?
+- implement classes?
+
+- press Enter to continue instead of jumping straight to text
+
+Choice backstory
+- 1 stark0
+- 2 lannister0
+- 3 greyjoy0
+
+1 stark0
+- 4 battle of winterfell
+- 5 stark betrayal
+
+2 lannister0
+- 4 battle of winterfell
+- 6 crannogmen attack
+
+3 greyjoy0
+- 4 battle of winterfell
+- 7 bolton flaying
+

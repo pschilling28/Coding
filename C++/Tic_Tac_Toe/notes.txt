@@ -1,0 +1,8 @@
+Updates
+- Can I use a vector of nine vectors to use better text art for X and O?
+
+- Add coin flip to determine starting player
+
+- Press Enter to begin
+
+- Allow quitting early and/or conceding

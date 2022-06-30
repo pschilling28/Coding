@@ -1,0 +1,13 @@
+void introduction();
+void run_story();
+void house_choice();
+void stark0();
+void battle_of_winterfell();
+void stark_betrayal();
+void lannister0();
+void crannogmen_attack();
+void bolton_flaying();
+void greyjoy0();
+void story();
+void branch(int choice);
+void ending();
