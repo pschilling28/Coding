@@ -1,0 +1,25 @@
+table {
+    border: 2px solid blueviolet;
+    margin: 0 auto;
+    width: 100%;
+}
+
+thead {
+    background-color: orchid;
+    color:black
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+td {
+    border-top: 1px solid blueviolet;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.element {
+    background-color: beige;
+}
