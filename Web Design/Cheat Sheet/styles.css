@@ -6,12 +6,14 @@ table {
 
 thead {
     background-color: orchid;
-    color:black
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 tbody {
     display: table-row-group;
     vertical-align: middle;
+    font-family: monospace;
 }
 
 td {
@@ -20,6 +22,15 @@ td {
     text-align: center;
 }
 
+footer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:12px;
+}
+
 .element {
     background-color: beige;
+}
+
+.title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
