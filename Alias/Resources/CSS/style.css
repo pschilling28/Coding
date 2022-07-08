@@ -1,12 +1,6 @@
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#placeholder {
-    font-size: 64px;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: fixed;
+    box-sizing: border-box;
 }
 
 header {
@@ -17,16 +11,25 @@ header {
     color:rgba(240, 248, 255, 0.911);
 }
 
+a {
+    cursor: pointer;
+    color:rgba(240, 248, 255, 0.952);
+    text-decoration: none;
+}
+
 nav {
     text-align: center;
+    box-sizing: border-box;
 }
 
 nav li {
     display: inline-block;
     position: relative;
     text-align: center;
-    margin:auto;
-    width:25%;
+    padding: 20px 40px;
+    width:30%;
+    background-color: rgb(0, 195, 255);
+    top: 0;
 }
 
 button {
@@ -34,10 +37,18 @@ button {
     width: 50%;
     margin: 20% 25%;
     height: 40px;
-    font-weight:bolder
+    font-weight:bolder;
+    cursor:pointer;
 }
 
 footer {
     bottom: 1px;
     font-size:small;
+}
+
+#placeholder {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
 }
