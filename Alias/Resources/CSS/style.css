@@ -42,7 +42,7 @@ main {
     flex-grow: 1;
     align-self: stretch;
     width: 365px;
-    height: 550px;
+    height: 450px;
     background-color: rgb(236, 155, 59);
     border-radius: 10px;
     opacity: 1;
@@ -51,9 +51,10 @@ main {
 }
 
 main img {
+    position: relative;
     height:150px;
-    padding:15%;
-    border-radius: 100%;
+    padding: 50px;
+    border-radius: 50%;
 }
 
 main p {
@@ -73,6 +74,10 @@ a {
     text-decoration: none;
 }
 
+a:active {
+    color:rgb(236, 155, 39);
+}
+
 nav {
     text-align: center;
     box-sizing: border-box;
@@ -85,12 +90,8 @@ nav li {
     background-color: rgb(41, 52, 98);
     padding: 5px 10px;
     margin:auto;
+    border-radius: 10px;
 }
-
-nav li a:active {
-    color:rgb(236, 155, 39);
-}
-
 
 button {
     display: block;
@@ -117,15 +118,8 @@ button:active {
 }
 
 footer {
-    bottom: 1px;
     font-size:small;
     position: relative;
-    top: 60px;
+    top: 100px;
     color: white;
-}
-
-#placeholder {
-    font-size: 64px;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
