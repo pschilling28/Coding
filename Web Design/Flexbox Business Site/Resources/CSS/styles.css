@@ -1,0 +1,16 @@
+/* Universal styles */
+html{
+    font-size: 16px;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-height: 4rem;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid #e2fe91;
+    background-image:
+}
+
