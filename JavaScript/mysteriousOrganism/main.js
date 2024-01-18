@@ -18,22 +18,62 @@ const pAequorFactory = (num, arr) => {
         specimenNum: num,
         dna: arr,
         mutate() {
-          let oldBase = arr[Math.floor(Math.random() * arr.length)];
-          console.log(oldBase);
+          let oldBaseIndex = Math.floor(Math.random() * arr.length);
+          let oldBase = arr[oldBaseIndex];
           let newBase = returnRandBase();
           while (oldBase === newBase) {
+            console.log(newBase);
             newBase = returnRandBase();
           };
-          oldBase = newBase;
+          arr[oldBaseIndex] = newBase;
           return this.dna;
+        },
+        compareDNA(pAequor) {
+          let sameCount = 0;
+          for(let i = 0; i < this.dna.length; i++) {
+            if (this.dna[i] === pAequor.dna[i]) {
+              sameCount++;
+            }
+          }
+          let percentInCommon = ((sameCount/this.dna.length)* 100).toFixed(2);
+          console.log(`Specimen #${this.specimenNum} and specimen #${pAequor.specimenNum} have ${percentInCommon}% DNA in common.`);
+        },
+        willLikelySurvive() {
+          let CGCount = 0;
+          for(let i = 0; i < this.dna.length; i++) {
+            if (this.dna[i] === 'C'|| this.dna[i] === 'G') {
+              CGCount++;
+            }
+          }
+          if(CGCount/this.dna.length >= 0.6) {
+            return true;
+          } else {
+            return false;
+          };
         }
     }; 
 }
 
-//test
-//console.log(pAequorFactory(1, mockUpStrand()));
-let inst1 = pAequorFactory(1, mockUpStrand());
-console.log(inst1.dna);
-inst1.mutate();
-//console.log(inst1.dna);
-//console.log('test');*/
+const buildSurvivalArray = num => {
+  let survivalArray = [];
+  let i = 1;
+  while (survivalArray.length < num) {
+    let strand = pAequorFactory(i, mockUpStrand());
+    if (strand.willLikelySurvive() === true) {
+      survivalArray.push(strand);
+    }
+    i++;
+    console.log(i);
+    console.log(survivalArray.length);
+  }
+  return survivalArray;
+}
+
+
+//testScript
+//let testStrand1 = pAequorFactory(1, mockUpStrand());
+//console.log(testStrand1.dna);
+//let testStrand2 = pAequorFactory(2, mockUpStrand());
+//console.log(testStrand2.dna);
+//console.log(testStrand1.willLikelySurvive());
+console.log(buildSurvivalArray(30));
